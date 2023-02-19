@@ -33,7 +33,7 @@ const login = (req, res, next) => {
                 return
             }
 
-            res.status(200).json(signJwt(userId.toString(), email))
+            res.status(200).json(signJwt(userId, email))
             return
 
         })

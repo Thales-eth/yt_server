@@ -48,10 +48,12 @@ En el directorio raíz del proyecto se encontrará una json denominado "{NOMBRE 
 | URL path                    | HTTP Method       | Response                          | Action                        |
 | :--------------------------:|:-----------------:| :--------------------------------:| :----------------------------:|
 | /api/users/list             | GET               | [users]                           | Get all users from the DB     |
+| /api/users/getLoggedUser             | GET               | {user}                           | Get logged user from the DB     |
+| /api/users/delete/:id             | DELETE               | {message: "User deleted!"}                           | Delete user from the DB     |
 
 ## **Auth routes**:
 
 | URL path                    | HTTP Method       | Response                          | Action                        |
 | :--------------------------:|:-----------------:| :--------------------------------:| :----------------------------:|
-| /api/auth/create            | POST              | {message: 'New User created!'}    | Create a new user             |
+| /api/auth/signup            | POST              | {message: 'New User created!'}    | Create a new user             |
 | /api/auth/login             | POST              | `Token`    | Log user in             |
